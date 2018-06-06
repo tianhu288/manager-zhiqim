@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ZHIQIM-CONFIG PUBLIC "-//ZHIQIM //DTD Zhiqim-Config Configuration 1.4.0//EN" "http://zhiqim.org/xmldtds/zhiqim_config_1_4_0.dtd">
+<zhiqim-config>
+
+    <group id="boot" desc="系统启动配置">
+        <item key="name" value="ManagerZhiqim" update="false" desc="系统名称" />
+        <item key="version" value="V1.0" update="false" desc="系统版本" />
+        <item key="port" value="50080" update="false" desc="系统监听端口，用于启动监听和命令关闭工程" />
+        <item key="process" value="zhiqim" update="false" desc="使用的进程名，MAC系统下该配置无效" />
+        <item key="args" value="-server -Xms64m -Xmx1024m" update="false" desc="JVM参数" />
+    </group>
+
+    <group id="config" desc="系统其他配置文件，./开头表示工程相对路径下，绝对路径使用/或d:/等(Windows也使用顺斜杠作路径)">
+        <item key="logging" value="./conf/logging.xml" update="false" desc="日志配置文件" />
+        <item key="httpd" value="./conf/httpd.xml" update="false" desc="WEB配置" />
+    </group>
+
+    <group id="service" desc="系统服务配置，有依赖时注意顺序，系统按顺序加载，按倒序销毁">
+        <item key="logging" value="org.zhiqim.kernel.logging.LogServer" update="false" desc="日志服务" />
+        <item key="cutter" value="org.zhiqim.kernel.logging.LogLinuxNohupCutter" update="false" desc="日志Linux切割服务" />
+        <item key="resource" value="org.zhiqim.httpd.HttpServer" update="false" desc="web服务" />
+    </group>
+
+</zhiqim-config>

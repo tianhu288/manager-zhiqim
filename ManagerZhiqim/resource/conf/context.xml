@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ZHIQIM-CONTEXT PUBLIC "-//ZHIQIM //DTD Zhiqim-Context Configuration 1.4.0//EN" "http://zhiqim.org/dtd/zhiqim_context_1_4_0.dtd">
+<zhiqim-context>
+
+    <attribute name="系统名称" key="name" value="知启蒙WEB工程" />
+    <attribute name="系统版本" key="version" value="V1.0" />
+    
+</zhiqim-context>
