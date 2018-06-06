@@ -1,6 +1,53 @@
 ${zhiqim_manager_breadcrumb ("首页")}
 ${zhiqim_manager_content()}
-
-<div>123</div>
+${Styles.src("/zres/css/index.css")}
+<div class="detail-content z-bg-white">
+    <h2 class="z-weight-normal z-pd-l20 z-px16 z-mg0">财务总览</h2>
+    <section class="account-balance zi-pd-b5">
+        <div class="section-header z-mg-b20"><h4 class="z-px16 z-show-ib z-mg0">账户信息</h4></div>
+        <div class="z-float-left z-w50p">
+            <div class="form-row z-mg-b15">
+                <label class="z-w80 z-px12 z-float-left z-show-ib z-h30 z-lh30 z-color-666">现金余额：</label>
+                <div class="z-h30 z-lh30 z-mg-l0">
+                    <span class="z-mg-r15">￥0.00</span>
+                    <a href="#" class="z-mg-r15">充值</a>
+                    <a href="#" class="z-mg-r15">提现</a>
+                </div>
+            </div>
+            <div class="form-row z-mg-b15">
+                <label class="z-w80 z-px12 z-float-left z-show-ib z-h30 z-lh30 z-color-666">可用代金券：</label>
+                <div class="z-h30 z-lh30 z-mg-l0 z-px15">
+                    <a href="#" class="z-px14 z-mg-r5">0</a>张
+                </div>
+            </div>
+        </div>
+        <div class="z-float-left z-w50p">
+            <div class="form-row z-mg-b15">
+                <label class="z-w80 z-px12 z-float-left z-show-ib z-h30 z-lh30 z-color-666">预警阈值：</label>
+                <div class="z-h30 z-lh30 z-mg-l0">
+                    <input class="alarm-value-input z-input z-blue" data-options="type:Numeric;paste:true;" value="1" placeholder="大于零的整数"> 元
+                    <button class="z-button z-blue z-mg-l15">确定</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="account-panel">
+        <div class="section-header z-mg-b20"><h4 class="z-px16 z-show-ib z-mg0">消费信息</h4></div>
+        <div class="item z-relative z-float-left z-pd20 z-mg-r10">
+            <div class="bg day"></div>
+            <div class="z-float-left z-mg-t10">
+                <p class="z-show-b z-px22">￥0.00</p>
+                <span class="z-show-b z-mg-t10 z-mg-l3 z-px12 z-color-666">今日消费金额</span>
+            </div>
+        </div>
+        <div class="item z-relative z-float-left z-pd20 z-mg-r10">
+            <div class="bg month"></div>
+            <div class="z-float-left z-mg-t10">
+                <a class="z-show-b z-px22" href="#/consumption/overview">￥0.00</a>
+                <span class="z-show-b z-mg-t10 z-mg-l3 z-px12 z-color-666">本月消费金额</span>
+            </div>
+        </div>
+    </section>
+</div>
 
 ${zhiqim_manager_content_end()}

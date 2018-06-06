@@ -213,3 +213,5 @@ Caused by: org.zhiqim.zml.exception.ExpressionException: 方法表达式{zhiqim_
 Caused by: java.lang.Exception: 加载上下文ZML失败，不支持获取函数
 	at org.zhiqim.zml.ZmlEngine.getFunction(ZmlEngine.java:349)
 	... 14 more
+2018-06-06 19:37:27,949 [main] FATAL - 初始化连接池失败[mysql]
+2018-06-06 19:37:27,963 [main] FATAL - 服务[org.zhiqim.orm.ORMServer]初始化失败，退出工程

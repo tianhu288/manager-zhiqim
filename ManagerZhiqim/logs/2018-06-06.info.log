@@ -882,3 +882,101 @@
 
 2018-06-06 13:08:42,476 [Threader-Resource.listener-2] INFO - USER:guest IP:192.168.1.27 URI:/zhiqimManager/main.htm 失败信息:您闲置太久或未登录，正在返回初始界面，请确定.....
 2018-06-06 13:08:46,921 [Threader-Resource.listener-1] INFO - USER:zhiqim IP:192.168.1.27 URI:/zhiqimManager/login.htm
+2018-06-06 19:37:27,846 [main] INFO - 初始化[数据库映射:orm]开始...
+2018-06-06 19:38:23,198 [main] INFO - 初始化[数据库映射:orm]开始...
+2018-06-06 19:38:23,285 [main] INFO - 初始化[数据库映射:orm]完成!!!
+
+2018-06-06 19:38:23,286 [main] INFO - 初始化[HTTP服务:resource]开始...
+2018-06-06 19:38:23,356 [main] INFO - 初始化[HTTP服务:resource][ZML引擎]开始...[2018-06-06 19:38:23,356]
+2018-06-06 19:38:23,361 [main] INFO - 初始化[HTTP服务:resource][ZML引擎]结束!!![2018-06-06 19:38:23,361]
+2018-06-06 19:38:23,362 [main] INFO - 初始化[HTTP服务:resource][Context:ManagerZhiqim]开始...[2018-06-06 19:38:23,361]
+2018-06-06 19:38:23,413 [main] INFO - <attribute name="系统名称" key="name" value="知启蒙管理台" />
+2018-06-06 19:38:23,414 [main] INFO - <attribute name="系统版本" key="version" value="V1.4.0" />
+2018-06-06 19:38:23,414 [main] INFO - <attribute name="系统引导" key="bootstrap" value="org.zhiqim.manager.ZmrBootstrap" />
+2018-06-06 19:38:23,414 [main] INFO - <attribute name="管理台菜单" key="zmr_menu_sql" value="/conf/zmr.menu.sql" />
+2018-06-06 19:38:23,414 [main] INFO - <attribute name="管理台名称" key="zhiqimManager" value="zhiqimManager" />
+2018-06-06 19:38:23,415 [main] INFO - <interceptor name="检查登录" key="chkZmrLogin" class="org.zhiqim.manager.ZmrInterceptor" />
+2018-06-06 19:38:23,424 [main] INFO - <action name="首页" path="/index.htm" view="/ztmpl/zhiqimManager/index.htm" class="org.zhiqim.manager.action.IndexAction" />
+2018-06-06 19:38:23,425 [main] INFO - <action name="管理页" path="/zhiqimManager.htm" view="/ztmpl/zhiqimManager/index.htm" class="org.zhiqim.manager.action.IndexAction" />
+2018-06-06 19:38:23,425 [main] INFO - <action name="登录" path="/zhiqimManager/login.htm" redirect="/zhiqimManager/main.htm" class="org.zhiqim.manager.action.LoginAction" />
+2018-06-06 19:38:23,425 [main] INFO - <action name="退出" path="/zhiqimManager/logout.htm" redirect="/index.htm" class="org.zhiqim.manager.action.LogoutAction" />
+2018-06-06 19:38:23,425 [main] INFO - <action name="主页" path="/zhiqimManager/main.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/main.zml" class="org.zhiqim.manager.action.MainAction" />
+2018-06-06 19:38:23,426 [main] INFO - <action name="主页框架" path="/zhiqimManager/welcome.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/main.zml" class="org.zhiqim.manager.action.MainAction" />
+2018-06-06 19:38:23,426 [main] INFO - <action name="用户中心" path="/zhiqimManager/profile.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/profile.zml" class="org.zhiqim.manager.action.ProfileAction" />
+2018-06-06 19:38:23,426 [main] INFO - <action name="系统菜单列表" path="/zhiqimManager/menu.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/menu.zml" class="org.zhiqim.manager.action.MenuAction" method="list" />
+2018-06-06 19:38:23,427 [main] INFO - <action name="增加菜单页面" path="/zhiqimManager/menuAdd.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/menuAdd.zml" class="org.zhiqim.manager.action.MenuAction" method="add" />
+2018-06-06 19:38:23,427 [main] INFO - <action name="增加菜单处理" path="/zhiqimManager/menuInsert.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/menu.htm" class="org.zhiqim.manager.action.MenuAction" method="insert" success="增加成功" />
+2018-06-06 19:38:23,427 [main] INFO - <action name="修改菜单页面" path="/zhiqimManager/menuModify.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/menuModify.zml" class="org.zhiqim.manager.action.MenuAction" method="modify" />
+2018-06-06 19:38:23,428 [main] INFO - <action name="修改菜单处理" path="/zhiqimManager/menuUpdate.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/menu.htm" class="org.zhiqim.manager.action.MenuAction" method="update" success="修改成功" />
+2018-06-06 19:38:23,428 [main] INFO - <action name="删除菜单处理" path="/zhiqimManager/menuDelete.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/menu.htm" class="org.zhiqim.manager.action.MenuAction" method="delete" success="删除成功" />
+2018-06-06 19:38:23,428 [main] INFO - <action name="系统配置设置" path="/zhiqimManager/config.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/config.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/config.zml" class="org.zhiqim.manager.action.ConfigAction" />
+2018-06-06 19:38:23,429 [main] INFO - <action name="系统参数设置" path="/zhiqimManager/param.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/param.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/param.zml" class="org.zhiqim.manager.action.ParamAction" />
+2018-06-06 19:38:23,429 [main] INFO - <action name="更换首页主题风格" path="/zhiqimManager/themeIndex.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/themeIndex.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/themeIndex.zml" class="org.zhiqim.manager.action.ThemeIndexAction" />
+2018-06-06 19:38:23,429 [main] INFO - <action name="更换主页主题风格" path="/zhiqimManager/themeMain.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/themeMain.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/themeMain.zml" class="org.zhiqim.manager.action.ThemeMainAction" />
+2018-06-06 19:38:23,429 [main] INFO - <action name="系统缓存管理" path="/zhiqimManager/cache.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/cache.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/cache.zml" class="org.zhiqim.manager.action.CacheAction" />
+2018-06-06 19:38:23,430 [main] INFO - <action name="头像列表" path="/zhiqimManager/avatar.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/avatar.zml" class="org.zhiqim.manager.action.AvatarAction" method="list" />
+2018-06-06 19:38:23,430 [main] INFO - <action name="修改头像页面" path="/zhiqimManager/avatarModify.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/avatarModify.zml" class="org.zhiqim.manager.action.AvatarAction" method="modify" />
+2018-06-06 19:38:23,430 [main] INFO - <action name="增加头像页面" path="/zhiqimManager/avatarAdd.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/avatarAdd.zml" />
+2018-06-06 19:38:23,431 [main] INFO - <action name="部门列表" path="/zhiqimManager/dept.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/dept.zml" class="org.zhiqim.manager.action.DeptAction" method="list" />
+2018-06-06 19:38:23,431 [main] INFO - <action name="增加部门页面" path="/zhiqimManager/deptAdd.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/deptAdd.zml" class="org.zhiqim.manager.action.DeptAction" method="add" />
+2018-06-06 19:38:23,431 [main] INFO - <action name="增加部门处理" path="/zhiqimManager/deptInsert.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/dept.htm" class="org.zhiqim.manager.action.DeptAction" method="insert" success="增加成功" />
+2018-06-06 19:38:23,432 [main] INFO - <action name="修改部门页面" path="/zhiqimManager/deptModify.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/deptModify.zml" class="org.zhiqim.manager.action.DeptAction" method="modify" />
+2018-06-06 19:38:23,432 [main] INFO - <action name="修改部门处理" path="/zhiqimManager/deptUpdate.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/dept.htm" class="org.zhiqim.manager.action.DeptAction" method="update" success="修改成功" />
+2018-06-06 19:38:23,432 [main] INFO - <action name="删除部门处理" path="/zhiqimManager/deptDelete.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/dept.htm" class="org.zhiqim.manager.action.DeptAction" method="delete" success="删除成功" />
+2018-06-06 19:38:23,432 [main] INFO - <action name="部门操作员" path="/zhiqimManager/deptOperator.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/deptOperator.zml" class="org.zhiqim.manager.action.DeptOperatorAction" />
+2018-06-06 19:38:23,433 [main] INFO - <action name="部门增加操作员" path="/zhiqimManager/deptOperatorSelector.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/deptOperatorSelector.zml" class="org.zhiqim.manager.action.DeptOperatorSelectorAction" />
+2018-06-06 19:38:23,433 [main] INFO - <action name="部门关联权限" path="/zhiqimManager/deptRule.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/deptRule.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/deptRule.zml" class="org.zhiqim.manager.action.DeptRuleAction" success="保存成功" />
+2018-06-06 19:38:23,433 [main] INFO - <action name="角色列表" path="/zhiqimManager/role.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/role.zml" class="org.zhiqim.manager.action.RoleAction" method="list" />
+2018-06-06 19:38:23,434 [main] INFO - <action name="增加角色页面" path="/zhiqimManager/roleAdd.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/roleAdd.zml" class="org.zhiqim.manager.action.RoleAction" method="add" />
+2018-06-06 19:38:23,434 [main] INFO - <action name="增加角色处理" path="/zhiqimManager/roleInsert.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/role.htm" class="org.zhiqim.manager.action.RoleAction" method="insert" success="增加成功" />
+2018-06-06 19:38:23,434 [main] INFO - <action name="修改角色页面" path="/zhiqimManager/roleModify.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/roleModify.zml" class="org.zhiqim.manager.action.RoleAction" method="modify" />
+2018-06-06 19:38:23,435 [main] INFO - <action name="修改角色处理" path="/zhiqimManager/roleUpdate.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/role.htm" class="org.zhiqim.manager.action.RoleAction" method="update" success="修改成功" />
+2018-06-06 19:38:23,435 [main] INFO - <action name="删除角色处理" path="/zhiqimManager/roleDelete.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/role.htm" class="org.zhiqim.manager.action.RoleAction" method="delete" success="删除成功" />
+2018-06-06 19:38:23,435 [main] INFO - <action name="角色操作员" path="/zhiqimManager/roleOperator.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/roleOperator.zml" class="org.zhiqim.manager.action.RoleOperatorAction" />
+2018-06-06 19:38:23,436 [main] INFO - <action name="角色增加操作员" path="/zhiqimManager/roleOperatorSelector.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/roleOperatorSelector.zml" class="org.zhiqim.manager.action.RoleOperatorSelectorAction" />
+2018-06-06 19:38:23,436 [main] INFO - <action name="角色关联权限" path="/zhiqimManager/roleRule.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/roleRule.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/roleRule.zml" class="org.zhiqim.manager.action.RoleRuleAction" success="保存成功" />
+2018-06-06 19:38:23,436 [main] INFO - <action name="操作员列表" path="/zhiqimManager/operator.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/operator.zml" class="org.zhiqim.manager.action.OperatorAction" method="list" />
+2018-06-06 19:38:23,436 [main] INFO - <action name="增加操作员页面" path="/zhiqimManager/operatorAdd.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/operatorAdd.zml" class="org.zhiqim.manager.action.OperatorAction" method="add" />
+2018-06-06 19:38:23,437 [main] INFO - <action name="增加操作员处理" path="/zhiqimManager/operatorInsert.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/operator.htm" class="org.zhiqim.manager.action.OperatorAction" method="insert" success="增加成功" />
+2018-06-06 19:38:23,437 [main] INFO - <action name="修改操作员页面" path="/zhiqimManager/operatorModify.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/operatorModify.zml" class="org.zhiqim.manager.action.OperatorAction" method="modify" />
+2018-06-06 19:38:23,437 [main] INFO - <action name="修改操作员处理" path="/zhiqimManager/operatorUpdate.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/operator.htm" class="org.zhiqim.manager.action.OperatorAction" method="update" success="修改成功" />
+2018-06-06 19:38:23,438 [main] INFO - <action name="删除操作员处理" path="/zhiqimManager/operatorDelete.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/operator.htm" class="org.zhiqim.manager.action.OperatorAction" method="delete" success="删除成功" />
+2018-06-06 19:38:23,438 [main] INFO - <action name="操作员上传头像" path="/zhiqimManager/operatorUploadAvatar.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/operatorUploadAvatar.zml" />
+2018-06-06 19:38:23,438 [main] INFO - <action name="操作员选择对话框" path="/zhiqimManager/operatorSelector.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/operatorSelector.zml" class="org.zhiqim.manager.action.OperatorSelectorAction" />
+2018-06-06 19:38:23,438 [main] INFO - <action name="操作员权限修改" path="/zhiqimManager/operatorRule.htm" interceptor="chkZmrLogin" redirect="/zhiqimManager/operatorRule.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/operatorRule.zml" class="org.zhiqim.manager.action.OperatorRuleAction" />
+2018-06-06 19:38:23,439 [main] INFO - <action name="操作员权限显示" path="/zhiqimManager/operatorRuleView.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/operatorRuleView.zml" class="org.zhiqim.manager.action.OperatorRuleViewAction" />
+2018-06-06 19:38:23,439 [main] INFO - <action name="操作员部门选择框" path="/zhiqimManager/operatorDeptSelector.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/operatorDeptSelector.zml" class="org.zhiqim.manager.action.OperatorDeptSelectorAction" />
+2018-06-06 19:38:23,439 [main] INFO - <action name="操作员角色选择框" path="/zhiqimManager/operatorRoleSelector.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/operatorRoleSelector.zml" class="org.zhiqim.manager.action.OperatorRoleSelectorAction" />
+2018-06-06 19:38:23,439 [main] INFO - <action name="更换头像" path="/zhiqimManager/modifyAvatar.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/modifyAvatar.zml" />
+2018-06-06 19:38:23,440 [main] INFO - <action name="修改密码" path="/zhiqimManager/modifyPassword.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/modifyPassword.zml" />
+2018-06-06 19:38:23,440 [main] INFO - <action name="修改手机号" path="/zhiqimManager/modifyMobile.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/modifyMobile.zml" />
+2018-06-06 19:38:23,440 [main] INFO - <action name="修改邮箱" path="/zhiqimManager/modifyEmail.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/modifyEmail.zml" />
+2018-06-06 19:38:23,440 [main] INFO - <action name="验证密码" path="/zhiqimManager/validatePassword.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/inner.htm" include="/zview/zhiqimManager/validatePassword.zml" />
+2018-06-06 19:38:23,441 [main] INFO - <action name="操作日志查询" path="/zhiqimManager/operateLog.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/operateLog.zml" class="org.zhiqim.manager.action.OperateLogAction" />
+2018-06-06 19:38:23,441 [main] INFO - <action name="操作员在线列表" path="/zhiqimManager/operatorOnline.htm" interceptor="chkZmrLogin" view="/ztmpl/zhiqimManager/template.htm" include="/zview/zhiqimManager/operatorOnline.zml" class="org.zhiqim.manager.action.OperatorOnlineAction" />
+2018-06-06 19:38:23,441 [main] INFO - <action name="头像" path="/zhiqimManager/avatar/*/*.png" class="org.zhiqim.manager.action.AvatarAction" method="access" />
+2018-06-06 19:38:23,442 [main] INFO - <action name="后台页面.htm" path="/zmr/*.htm" interceptor="chkZmrLogin" class="org.zhiqim.manager.action.ZmrAction" />
+2018-06-06 19:38:23,442 [main] INFO - <action name="后台页面.zml" path="/zmr/*.zml" interceptor="chkZmrLogin" class="org.zhiqim.manager.action.ZmrAction" />
+2018-06-06 19:38:23,442 [main] INFO - <action name="内部页面.htm" path="/zmi/*.htm" interceptor="chkZmrLogin" class="org.zhiqim.manager.action.ZmiAction" />
+2018-06-06 19:38:23,442 [main] INFO - <action name="内部页面.zml" path="/zmi/*.zml" interceptor="chkZmrLogin" class="org.zhiqim.manager.action.ZmiAction" />
+2018-06-06 19:38:23,548 [main] INFO - 创建表[ZMR_PARAM]成功
+2018-06-06 19:38:23,644 [main] INFO - 创建表[ZMR_OPERATOR]成功
+2018-06-06 19:38:23,926 [main] INFO - 创建表[ZMR_MENU]成功
+2018-06-06 19:38:24,081 [main] INFO - 创建表[ZMR_AVATAR]成功
+2018-06-06 19:38:25,326 [main] INFO - 创建表[ZMR_DEPT]成功
+2018-06-06 19:38:25,338 [main] INFO - 增加计划任务[org.zhiqim.manager.ZmrTask]
+2018-06-06 19:38:25,338 [main] INFO - <attribute name="系统名称" key="name" value="知启蒙WEB工程" />
+2018-06-06 19:38:25,338 [main] INFO - <attribute name="系统版本" key="version" value="V1.0" />
+2018-06-06 19:38:25,339 [main] INFO - <action name="测试页" path="/manager/index.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/manager/index.zml" />
+2018-06-06 19:38:25,346 [main] INFO - 初始化[HTTP服务:resource][Context:知启蒙WEB工程]完成!!![2018-06-06 19:38:25,345]
+2018-06-06 19:38:25,347 [main] INFO - 初始化[HTTP服务:resource]HTTP监听:[name:resource.listener;port:80]完成!!!
+
+2018-06-06 19:38:25,348 [main] INFO - 系统[ManagerZhiqim]-版本[V1.0]初始化完成!!!
+
+2018-06-06 19:38:56,634 [Threader-Resource.listener-2] INFO - USER:zhiqim IP:192.168.199.108 URI:/zhiqimManager/login.htm
+2018-06-06 19:38:56,716 [Threader-Resource.listener-2] INFO - 创建表[ZMR_OPERATOR_LOG]成功
+2018-06-06 20:35:47,427 [Threader-Resource.listener-1] INFO - USER:zhiqim IP:192.168.199.108 URI:/zhiqimManager/login.htm
+2018-06-06 20:37:44,102 [Threader-Resource.listener-5] INFO - USER:zhiqim IP:192.168.199.108 URI:/zhiqimManager/themeIndex.htm
+2018-06-06 20:37:50,561 [Threader-Resource.listener-3] INFO - USER:zhiqim IP:192.168.199.108 URI:/zhiqimManager/login.htm
+2018-06-06 20:38:34,480 [Threader-Resource.listener-5] INFO - USER:zhiqim IP:192.168.199.108 URI:/zhiqimManager/themeIndex.htm
+2018-06-06 21:24:20,750 [Threader-Resource.listener-3] INFO - USER:zhiqim IP:192.168.199.108 URI:/zhiqimManager/login.htm
