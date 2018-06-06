@@ -1,0 +1,215 @@
+﻿2018-06-06 11:38:37,708 [main] ERROR - 初始化[HTTP服务:resource][Context:ManagerZhiqim]失败!!!
+java.lang.IllegalArgumentException: [ZContext.addComponent(第296行)]组件配置[管理台], resourcePath或actionPackage一项不能为空
+	at org.zhiqim.kernel.util.Asserts.as(Asserts.java:62)
+	at org.zhiqim.httpd.context.config.ZContext.addComponent(ZContext.java:296)
+	at org.zhiqim.httpd.context.config.ZContext.load(ZContext.java:195)
+	at org.zhiqim.httpd.context.ZmlConfig.create(ZmlConfig.java:119)
+	at org.zhiqim.httpd.context.ZmlContext.initContext(ZmlContext.java:188)
+	at org.zhiqim.httpd.context.ZmlContext.create(ZmlContext.java:92)
+	at org.zhiqim.httpd.HttpServer.create(HttpServer.java:135)
+	at org.zhiqim.kernel.Zhiqim.createService(Zhiqim.java:284)
+	at org.zhiqim.kernel.Zhiqim.startup(Zhiqim.java:132)
+	at org.zhiqim.kernel.Zhiqim.main(Zhiqim.java:71)
+2018-06-06 11:38:37,708 [main] FATAL - 服务[org.zhiqim.httpd.HttpServer]初始化失败，退出工程
+2018-06-06 11:46:52,439 [main] ERROR - 初始化[HTTP服务:resource][Context:知启蒙管理台]失败!!!
+java.lang.IllegalArgumentException: [ZmlEngine.loadConfigZml(第606行)]加载上下文ZML[/conf/config.zml]异常
+	at org.zhiqim.kernel.util.Asserts.exception(Asserts.java:507)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:606)
+	at org.zhiqim.zml.ZmlEngine.addConfigZml(ZmlEngine.java:256)
+	at org.zhiqim.httpd.context.ZmlConfig.create(ZmlConfig.java:172)
+	at org.zhiqim.httpd.context.ZmlContext.initContext(ZmlContext.java:182)
+	at org.zhiqim.httpd.context.ZmlContext.create(ZmlContext.java:92)
+	at org.zhiqim.httpd.HttpServer.create(HttpServer.java:139)
+	at org.zhiqim.kernel.Zhiqim.createService(Zhiqim.java:284)
+	at org.zhiqim.kernel.Zhiqim.startup(Zhiqim.java:132)
+	at org.zhiqim.kernel.Zhiqim.main(Zhiqim.java:71)
+Caused by: java.lang.NullPointerException
+	at org.zhiqim.manager.dao.ZmrParamDao.getParam(ZmrParamDao.java:118)
+	at org.zhiqim.manager.dao.ZmrParamDao.getString(ZmrParamDao.java:124)
+	at org.zhiqim.manager.ZmrCdnRuntime.build(ZmrCdnRuntime.java:53)
+	at org.zhiqim.zml.ZmlVariable.chkDynamicVar(ZmlVariable.java:256)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:74)
+	at org.zhiqim.httpd.context.ZmlConfig.doUpdateVariable(ZmlConfig.java:368)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:601)
+	... 8 more
+2018-06-06 11:46:52,439 [main] FATAL - 服务[org.zhiqim.httpd.HttpServer]初始化失败，退出工程
+2018-06-06 11:51:06,865 [main] ERROR - 初始化[HTTP服务:resource][Context:知启蒙管理台]失败!!!
+java.lang.IllegalArgumentException: [ZmlEngine.loadConfigZml(第606行)]加载上下文ZML[/conf/config.zml]异常
+	at org.zhiqim.kernel.util.Asserts.exception(Asserts.java:507)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:606)
+	at org.zhiqim.zml.ZmlEngine.addConfigZml(ZmlEngine.java:256)
+	at org.zhiqim.httpd.context.ZmlConfig.create(ZmlConfig.java:172)
+	at org.zhiqim.httpd.context.ZmlContext.initContext(ZmlContext.java:182)
+	at org.zhiqim.httpd.context.ZmlContext.create(ZmlContext.java:92)
+	at org.zhiqim.httpd.HttpServer.create(HttpServer.java:139)
+	at org.zhiqim.kernel.Zhiqim.createService(Zhiqim.java:284)
+	at org.zhiqim.kernel.Zhiqim.startup(Zhiqim.java:132)
+	at org.zhiqim.kernel.Zhiqim.main(Zhiqim.java:71)
+Caused by: java.lang.NullPointerException
+	at org.zhiqim.manager.dao.ZmrParamDao.getParam(ZmrParamDao.java:118)
+	at org.zhiqim.manager.dao.ZmrParamDao.getString(ZmrParamDao.java:124)
+	at org.zhiqim.manager.ZmrCdnRuntime.build(ZmrCdnRuntime.java:53)
+	at org.zhiqim.zml.ZmlVariable.chkDynamicVar(ZmlVariable.java:256)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:74)
+	at org.zhiqim.httpd.context.ZmlConfig.doUpdateVariable(ZmlConfig.java:368)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:601)
+	... 8 more
+2018-06-06 11:51:06,866 [main] FATAL - 服务[org.zhiqim.httpd.HttpServer]初始化失败，退出工程
+2018-06-06 11:51:34,789 [main] ERROR - 初始化[HTTP服务:resource][Context:知启蒙管理台]失败!!!
+java.lang.IllegalArgumentException: [ZmlEngine.loadConfigZml(第606行)]加载上下文ZML[/conf/config.zml]异常
+	at org.zhiqim.kernel.util.Asserts.exception(Asserts.java:507)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:606)
+	at org.zhiqim.zml.ZmlEngine.addConfigZml(ZmlEngine.java:256)
+	at org.zhiqim.httpd.context.ZmlConfig.create(ZmlConfig.java:172)
+	at org.zhiqim.httpd.context.ZmlContext.initContext(ZmlContext.java:182)
+	at org.zhiqim.httpd.context.ZmlContext.create(ZmlContext.java:92)
+	at org.zhiqim.httpd.HttpServer.create(HttpServer.java:139)
+	at org.zhiqim.kernel.Zhiqim.createService(Zhiqim.java:284)
+	at org.zhiqim.kernel.Zhiqim.startup(Zhiqim.java:132)
+	at org.zhiqim.kernel.Zhiqim.main(Zhiqim.java:71)
+Caused by: java.lang.NullPointerException
+	at org.zhiqim.manager.dao.ZmrParamDao.getParam(ZmrParamDao.java:118)
+	at org.zhiqim.manager.dao.ZmrParamDao.getString(ZmrParamDao.java:124)
+	at org.zhiqim.manager.ZmrCdnRuntime.build(ZmrCdnRuntime.java:53)
+	at org.zhiqim.zml.ZmlVariable.chkDynamicVar(ZmlVariable.java:256)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:74)
+	at org.zhiqim.httpd.context.ZmlConfig.doUpdateVariable(ZmlConfig.java:368)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:601)
+	... 8 more
+2018-06-06 11:51:34,791 [main] FATAL - 服务[org.zhiqim.httpd.HttpServer]初始化失败，退出工程
+2018-06-06 11:53:30,997 [main] ERROR - 初始化[HTTP服务:resource][Context:知启蒙管理台]失败!!!
+java.lang.IllegalArgumentException: [ZmlEngine.loadConfigZml(第606行)]加载上下文ZML[/conf/config.zml]异常
+	at org.zhiqim.kernel.util.Asserts.exception(Asserts.java:507)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:606)
+	at org.zhiqim.zml.ZmlEngine.addConfigZml(ZmlEngine.java:256)
+	at org.zhiqim.httpd.context.ZmlConfig.create(ZmlConfig.java:172)
+	at org.zhiqim.httpd.context.ZmlContext.initContext(ZmlContext.java:182)
+	at org.zhiqim.httpd.context.ZmlContext.create(ZmlContext.java:92)
+	at org.zhiqim.httpd.HttpServer.create(HttpServer.java:139)
+	at org.zhiqim.kernel.Zhiqim.createService(Zhiqim.java:284)
+	at org.zhiqim.kernel.Zhiqim.startup(Zhiqim.java:132)
+	at org.zhiqim.kernel.Zhiqim.main(Zhiqim.java:71)
+Caused by: java.lang.NullPointerException
+	at org.zhiqim.manager.dao.ZmrParamDao.getParam(ZmrParamDao.java:118)
+	at org.zhiqim.manager.dao.ZmrParamDao.getString(ZmrParamDao.java:124)
+	at org.zhiqim.manager.ZmrCdnRuntime.build(ZmrCdnRuntime.java:53)
+	at org.zhiqim.zml.ZmlVariable.chkDynamicVar(ZmlVariable.java:256)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:74)
+	at org.zhiqim.httpd.context.ZmlConfig.doUpdateVariable(ZmlConfig.java:368)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:601)
+	... 8 more
+2018-06-06 11:53:30,997 [main] FATAL - 服务[org.zhiqim.httpd.HttpServer]初始化失败，退出工程
+2018-06-06 11:55:06,997 [main] ERROR - 初始化[HTTP服务:resource][Context:知启蒙管理台]失败!!!
+java.lang.IllegalArgumentException: [ZmlEngine.loadConfigZml(第606行)]加载上下文ZML[/conf/config.zml]异常
+	at org.zhiqim.kernel.util.Asserts.exception(Asserts.java:507)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:606)
+	at org.zhiqim.zml.ZmlEngine.addConfigZml(ZmlEngine.java:256)
+	at org.zhiqim.httpd.context.ZmlConfig.create(ZmlConfig.java:172)
+	at org.zhiqim.httpd.context.ZmlContext.initContext(ZmlContext.java:182)
+	at org.zhiqim.httpd.context.ZmlContext.create(ZmlContext.java:92)
+	at org.zhiqim.httpd.HttpServer.create(HttpServer.java:139)
+	at org.zhiqim.kernel.Zhiqim.createService(Zhiqim.java:284)
+	at org.zhiqim.kernel.Zhiqim.startup(Zhiqim.java:132)
+	at org.zhiqim.kernel.Zhiqim.main(Zhiqim.java:71)
+Caused by: java.lang.NullPointerException
+	at org.zhiqim.manager.dao.ZmrParamDao.getParam(ZmrParamDao.java:118)
+	at org.zhiqim.manager.dao.ZmrParamDao.getString(ZmrParamDao.java:124)
+	at org.zhiqim.manager.ZmrCdnRuntime.build(ZmrCdnRuntime.java:53)
+	at org.zhiqim.zml.ZmlVariable.chkDynamicVar(ZmlVariable.java:256)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:74)
+	at org.zhiqim.httpd.context.ZmlConfig.doUpdateVariable(ZmlConfig.java:368)
+	at org.zhiqim.zml.ZmlEngine.loadConfigZml(ZmlEngine.java:601)
+	... 8 more
+2018-06-06 11:55:06,997 [main] FATAL - 服务[org.zhiqim.httpd.HttpServer]初始化失败，退出工程
+2018-06-06 12:00:38,243 [main] FATAL - 初始化连接池失败[mysql]
+2018-06-06 12:00:38,244 [main] FATAL - 服务[org.zhiqim.orm.ORMServer]初始化失败，退出工程
+2018-06-06 12:01:24,781 [main] FATAL - 初始化连接池失败[mysql]
+2018-06-06 12:01:24,781 [main] FATAL - 服务[org.zhiqim.orm.ORMServer]初始化失败，退出工程
+2018-06-06 12:03:54,304 [Threader-Resource.listener-5] ERROR - null
+org.zhiqim.zml.exception.StatementException: [/zview/manager/index.zml][第3行],[第1列][${}方法表达式{zhiqim_manager_breadcrumb("知识库内容")}加载上下文ZML失败，不支持获取函数]
+	at org.zhiqim.zml.statement._Echo.process(_Echo.java:69)
+	at org.zhiqim.zml.StatementParser.processStatementList(StatementParser.java:621)
+	at org.zhiqim.zml.Zml.process(Zml.java:220)
+	at org.zhiqim.zml.Zml.process(Zml.java:176)
+	at org.zhiqim.httpd.context.returns.ReturnView.process(ReturnView.java:118)
+	at org.zhiqim.httpd.context.returns.ReturnView.process(ReturnView.java:48)
+	at org.zhiqim.httpd.context.ZmlExecutor.handleAction(ZmlExecutor.java:309)
+	at org.zhiqim.httpd.context.ZmlExecutor.handle(ZmlExecutor.java:94)
+	at org.zhiqim.httpd.aio.HttpAioConnection.service(HttpAioConnection.java:279)
+	at org.zhiqim.httpd.aio.HttpAioConnection.run(HttpAioConnection.java:112)
+	at org.zhiqim.kernel.control.Threader.run(Threader.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.zhiqim.zml.exception.ExpressionException: 方法表达式{zhiqim_manager_breadcrumb("知识库内容")}加载上下文ZML失败，不支持获取函数
+	at org.zhiqim.zml.expression.operator._Method.buildFunction(_Method.java:94)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:70)
+	at org.zhiqim.zml.statement._Echo.process(_Echo.java:65)
+	... 11 more
+Caused by: java.lang.Exception: 加载上下文ZML失败，不支持获取函数
+	at org.zhiqim.zml.ZmlEngine.getFunction(ZmlEngine.java:349)
+	... 14 more
+2018-06-06 12:04:54,420 [Threader-Resource.listener-3] ERROR - null
+org.zhiqim.zml.exception.StatementException: [/zview/manager/index.zml][第3行],[第1列][${}方法表达式{zhiqim_manager_breadcrumb()}加载上下文ZML失败，不支持获取函数]
+	at org.zhiqim.zml.statement._Echo.process(_Echo.java:69)
+	at org.zhiqim.zml.StatementParser.processStatementList(StatementParser.java:621)
+	at org.zhiqim.zml.Zml.process(Zml.java:220)
+	at org.zhiqim.zml.Zml.process(Zml.java:176)
+	at org.zhiqim.httpd.context.returns.ReturnView.process(ReturnView.java:118)
+	at org.zhiqim.httpd.context.returns.ReturnView.process(ReturnView.java:48)
+	at org.zhiqim.httpd.context.ZmlExecutor.handleAction(ZmlExecutor.java:309)
+	at org.zhiqim.httpd.context.ZmlExecutor.handle(ZmlExecutor.java:94)
+	at org.zhiqim.httpd.aio.HttpAioConnection.service(HttpAioConnection.java:279)
+	at org.zhiqim.httpd.aio.HttpAioConnection.run(HttpAioConnection.java:112)
+	at org.zhiqim.kernel.control.Threader.run(Threader.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.zhiqim.zml.exception.ExpressionException: 方法表达式{zhiqim_manager_breadcrumb()}加载上下文ZML失败，不支持获取函数
+	at org.zhiqim.zml.expression.operator._Method.buildFunction(_Method.java:94)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:70)
+	at org.zhiqim.zml.statement._Echo.process(_Echo.java:65)
+	... 11 more
+Caused by: java.lang.Exception: 加载上下文ZML失败，不支持获取函数
+	at org.zhiqim.zml.ZmlEngine.getFunction(ZmlEngine.java:349)
+	... 14 more
+2018-06-06 12:04:54,840 [Threader-Resource.listener-4] ERROR - null
+org.zhiqim.zml.exception.StatementException: [/zview/manager/index.zml][第3行],[第1列][${}方法表达式{zhiqim_manager_breadcrumb()}加载上下文ZML失败，不支持获取函数]
+	at org.zhiqim.zml.statement._Echo.process(_Echo.java:69)
+	at org.zhiqim.zml.StatementParser.processStatementList(StatementParser.java:621)
+	at org.zhiqim.zml.Zml.process(Zml.java:220)
+	at org.zhiqim.zml.Zml.process(Zml.java:176)
+	at org.zhiqim.httpd.context.returns.ReturnView.process(ReturnView.java:118)
+	at org.zhiqim.httpd.context.returns.ReturnView.process(ReturnView.java:48)
+	at org.zhiqim.httpd.context.ZmlExecutor.handleAction(ZmlExecutor.java:309)
+	at org.zhiqim.httpd.context.ZmlExecutor.handle(ZmlExecutor.java:94)
+	at org.zhiqim.httpd.aio.HttpAioConnection.service(HttpAioConnection.java:279)
+	at org.zhiqim.httpd.aio.HttpAioConnection.run(HttpAioConnection.java:112)
+	at org.zhiqim.kernel.control.Threader.run(Threader.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.zhiqim.zml.exception.ExpressionException: 方法表达式{zhiqim_manager_breadcrumb()}加载上下文ZML失败，不支持获取函数
+	at org.zhiqim.zml.expression.operator._Method.buildFunction(_Method.java:94)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:70)
+	at org.zhiqim.zml.statement._Echo.process(_Echo.java:65)
+	... 11 more
+Caused by: java.lang.Exception: 加载上下文ZML失败，不支持获取函数
+	at org.zhiqim.zml.ZmlEngine.getFunction(ZmlEngine.java:349)
+	... 14 more
+2018-06-06 12:04:55,502 [Threader-Resource.listener-1] ERROR - null
+org.zhiqim.zml.exception.StatementException: [/zview/manager/index.zml][第3行],[第1列][${}方法表达式{zhiqim_manager_breadcrumb()}加载上下文ZML失败，不支持获取函数]
+	at org.zhiqim.zml.statement._Echo.process(_Echo.java:69)
+	at org.zhiqim.zml.StatementParser.processStatementList(StatementParser.java:621)
+	at org.zhiqim.zml.Zml.process(Zml.java:220)
+	at org.zhiqim.zml.Zml.process(Zml.java:176)
+	at org.zhiqim.httpd.context.returns.ReturnView.process(ReturnView.java:118)
+	at org.zhiqim.httpd.context.returns.ReturnView.process(ReturnView.java:48)
+	at org.zhiqim.httpd.context.ZmlExecutor.handleAction(ZmlExecutor.java:309)
+	at org.zhiqim.httpd.context.ZmlExecutor.handle(ZmlExecutor.java:94)
+	at org.zhiqim.httpd.aio.HttpAioConnection.service(HttpAioConnection.java:279)
+	at org.zhiqim.httpd.aio.HttpAioConnection.run(HttpAioConnection.java:112)
+	at org.zhiqim.kernel.control.Threader.run(Threader.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.zhiqim.zml.exception.ExpressionException: 方法表达式{zhiqim_manager_breadcrumb()}加载上下文ZML失败，不支持获取函数
+	at org.zhiqim.zml.expression.operator._Method.buildFunction(_Method.java:94)
+	at org.zhiqim.zml.expression.operator._Method.build(_Method.java:70)
+	at org.zhiqim.zml.statement._Echo.process(_Echo.java:65)
+	... 11 more
+Caused by: java.lang.Exception: 加载上下文ZML失败，不支持获取函数
+	at org.zhiqim.zml.ZmlEngine.getFunction(ZmlEngine.java:349)
+	... 14 more

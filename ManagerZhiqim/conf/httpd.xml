@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE ZHIQIM-CONFIG PUBLIC "-//ZHIQIM //DTD Zhiqim-Config Configuration 1.4.0//EN" "http://zhiqim.org/dtd/zhiqim_config_1_4_0.dtd">
+<!DOCTYPE ZHIQIM-CONFIG PUBLIC "-//ZHIQIM //DTD Zhiqim-Config Configuration 1.4.1//EN" "http://zhiqim.org/xmldtds/zhiqim_config_1_4_1.dtd">
 <zhiqim-config>
 
     <group id="resource" desc="HTTP服务">
-        <item key="listen" value="resource.listener" update="false" desc="HTTP服务的监听器" />
-        <item key="context" value="resource.root" update="false" desc="HTTP服务下包括的上下文环境，多个用逗号隔开" />
+        <item key="listen" value="resource.listener" type="protected" desc="HTTP服务的监听器" />
+        <item key="context" value="resource.root" type="protected" desc="HTTP服务下包括的上下文环境，多个用逗号隔开" />
     </group>
 
     <group id="resource.listener" desc="HTTP监听器">
-        <item key="scheme" value="HTTP" update="false" desc="HTTP或HTTPS协议" />
-        <item key="port" value="80" update="false" desc="监听端口" />
-        <item key="minPoolSize" value="5" update="false" desc="HTTP处理线程池最小值" />
-        <item key="maxPoolSize" value="10" update="false" desc="HTTP处理线程池最大值" />
+        <item key="scheme" value="HTTP" type="protected" desc="HTTP或HTTPS协议" />
+        <item key="port" value="80" type="protected" desc="监听端口" />
+        <item key="minPoolSize" value="5" type="protected" desc="HTTP处理线程池最小值" />
+        <item key="maxPoolSize" value="10" type="protected" desc="HTTP处理线程池最大值" />
     </group>
     
     <group id="resource.root" desc="HTTP根上下文环境">
-        <item key="path" value="/" update="false" desc="上下文环境路径，必填" />
-        <item key="resourceType" value="directory" update="false" desc="资源目录类型classpath|directory，无资源时可不配置" />
-        <item key="resourcePath" value="./resource" update="false" desc="资源目录，无资源时可不配置" />
-        <item key="welcomeUrl" value="/index.htm" update="false" desc="欢迎页，无资源时可不配置，/开头" />
+        <item key="path" value="/" type="protected" desc="上下文环境路径，必填" />
+        <item key="resourceType" value="directory" type="protected" desc="资源目录类型classpath|directory，无资源时可不配置" />
+        <item key="resourcePath" value="./resource" type="protected" desc="资源目录，无资源时可不配置" />
+        <item key="welcomeUrl" value="/index.htm" type="protected" desc="欢迎页，无资源时可不配置，/开头" />
     </group>
 
 </zhiqim-config>

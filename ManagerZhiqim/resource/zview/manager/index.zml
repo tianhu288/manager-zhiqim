@@ -1,0 +1,6 @@
+${zhiqim_manager_breadcrumb ("首页")}
+${zhiqim_manager_content()}
+
+<div>123</div>
+
+${zhiqim_manager_content_end()}

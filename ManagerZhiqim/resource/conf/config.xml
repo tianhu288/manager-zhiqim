@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ZHIQIM-CONTEXT PUBLIC "-//ZHIQIM //DTD Zhiqim-Context Configuration 1.4.1//EN" "http://zhiqim.org/xmldtds/zhiqim_context_1_4_1.dtd">
+<zhiqim-context>
+
+    <!-- 组件配置 -->
+    <component name="管理台" path="/org/zhiqim/manager/resource/" />
+    
+    <!-- 属性配置 -->
+    <attribute name="系统名称" key="name" value="知启蒙WEB工程" />
+    <attribute name="系统版本" key="version" value="V1.0" />
+    
+    <!-- ======================================================================= -->
+    <!-- 后台管理 -->
+    <!-- ======================================================================= -->
+    
+    <!-- 项目类目管理 -->
+    <action name="测试页" path="/manager/index.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/manager/index.zml"/>
+</zhiqim-context>
