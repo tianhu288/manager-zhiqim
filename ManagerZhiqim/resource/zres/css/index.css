@@ -1,0 +1,81 @@
+.detail-content {
+    padding: 0 0 50px;
+    border: 1px solid #DCE4EA
+}
+
+.detail-content a {
+    color: #108cee;
+}
+
+.detail-content h2 {
+    line-height: 60px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.detail-content section {
+    position: relative;
+    padding: 20px;
+    overflow:hidden;
+    border-bottom: 1px solid #DCE4EA;
+}
+
+.detail-content .section-header h4 {
+    zoom: 1;
+    font-weight: inherit;
+}
+
+.detail-content .section-header h4::before {
+    content: '';
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    width: 4px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.detail-content .form-row>label {
+    zoom: 1;
+}
+
+.detail-content .alarm-value-input {
+    vertical-align:top;
+}
+
+.detail-content .bg {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin: 10px 20px 0 5px;
+    background: url(../imgs/index-icons.png) 48px 48px no-repeat
+}
+
+.detail-content .bg.day {
+    background-position: 0 0
+}
+
+.detail-content .bg.month {
+    background-position: -58px 0
+}
+
+.detail-content .bg.credit {
+    background-position: -116px 0
+}
+
+.detail-content .bg.order {
+    background-position: 0 -58px
+}
+
+.detail-content .bg.renew {
+    background-position: -58px -58px
+}
+
+.detail-content .bg.invoice {
+    background-position: -116px -58px
+}
+
+.detail-content .account-panel .item {
+    min-width: 200px;
+    min-height: 100px;
+    background: #f6f7fb
+}
