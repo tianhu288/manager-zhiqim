@@ -43,7 +43,9 @@ insert into ZMR_MENU (PARENT_CODE, MENU_CODE, MENU_NAME, MENU_NAME_ABBR, MENU_LE
 insert into ZMR_MENU (PARENT_CODE, MENU_CODE, MENU_NAME, MENU_NAME_ABBR, MENU_LEVEL, MENU_STATUS, MENU_TYPE, MENU_ICON, MENU_URL, MENU_DESC) values ('MENU_010', 'MENU_010_200', '账户中心设置', '', 2, 0, 1, 'z-apps', '/zhiqimAccount/payment.htm', '');
 insert into ZMR_MENU (PARENT_CODE, MENU_CODE, MENU_NAME, MENU_NAME_ABBR, MENU_LEVEL, MENU_STATUS, MENU_TYPE, MENU_ICON, MENU_URL, MENU_DESC) values ('MENU_010', 'MENU_010_210', '项目类目管理', '', 2, 0, 1, 'z-list', '/zhiqimGitcan/type.htm', '');
 insert into ZMR_MENU (PARENT_CODE, MENU_CODE, MENU_NAME, MENU_NAME_ABBR, MENU_LEVEL, MENU_STATUS, MENU_TYPE, MENU_ICON, MENU_URL, MENU_DESC) values ('MENU', 'MENU_030', '统计数据', '统计', 1, 0, 1, 'z-list', '', '');
-insert into ZMR_MENU (PARENT_CODE, MENU_CODE, MENU_NAME, MENU_NAME_ABBR, MENU_LEVEL, MENU_STATUS, MENU_TYPE, MENU_ICON, MENU_URL, MENU_DESC) values ('MENU_030', 'MENU_030_010', '概览', '', 2, 0, 1, 'z-computer', '/manager/index.htm', '');
+insert into ZMR_MENU (PARENT_CODE, MENU_CODE, MENU_NAME, MENU_NAME_ABBR, MENU_LEVEL, MENU_STATUS, MENU_TYPE, MENU_ICON, MENU_URL, MENU_DESC) values ('MENU_030', 'MENU_030_010', '个人信息', '', 2, 0, 1, 'z-customer', '/manager/index.htm', '');
+insert into ZMR_MENU (PARENT_CODE, MENU_CODE, MENU_NAME, MENU_NAME_ABBR, MENU_LEVEL, MENU_STATUS, MENU_TYPE, MENU_ICON, MENU_URL, MENU_DESC) values ('MENU_030', 'MENU_030_818', '添加信用卡', '', 2, 0, 1, 'z-add', '/manager/addCard.htm', '');
+insert into ZMR_MENU (PARENT_CODE, MENU_CODE, MENU_NAME, MENU_NAME_ABBR, MENU_LEVEL, MENU_STATUS, MENU_TYPE, MENU_ICON, MENU_URL, MENU_DESC) values ('MENU_030', 'MENU_030_365', '提现', '', 2, 0, 1, 'z-cash', '/manager/case.htm', '');
 commit;
 
 -- ---------------------------------------------------

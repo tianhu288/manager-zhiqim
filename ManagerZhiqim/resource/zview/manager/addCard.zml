@@ -1,0 +1,59 @@
+${zhiqim_manager_breadcrumb ("添加银行卡")}
+${zhiqim_manager_content()}
+${Styles.src("/zres/css/index.css")}
+<script>
+function switchAddCard(elem)
+{//切换添加银行卡方式
+    Z(elem).addClass("active").siblings(".tabItem").removeClass("active");
+    var targ = "#" + Z(elem).attr("data-target");
+    Z(targ).show().siblings("section").hide();
+}
+</script>
+<div class="detail-content z-bg-white">
+    <h2 class="z-weight-normal z-pd-l20 z-px16 z-mg0 z-bg-gray">
+        <span onclick="switchAddCard(this);" class="tabItem z-show-ib active" data-target="addCardInfo">银行卡</span>
+        <span onclick="switchAddCard(this);" class="tabItem z-show-ib" data-target="addAlipay">支付宝</span>
+    </h2>
+    <section id="addCardInfo" class="addCardSection">
+        <form class="">
+            <div class="formBlock z-relative z-mg-t10">
+                <label class="z-absolute z-text-right">真实姓名</label>
+                <input class="z-input z-large z-blue" placeholder="输入真实姓名">
+            </div>
+            <div class="formBlock z-relative z-mg-t20">
+                <label class="z-absolute z-text-right">身份证号</label>
+                <input class="z-input z-large z-blue" placeholder="输入身份证号" >
+            </div>
+            <div class="formBlock z-relative z-mg-t20">
+                <label class="z-absolute z-text-right">银行卡卡号</label>
+                <input class="z-input z-large z-blue" placeholder="输入银行卡卡号">
+            </div>
+            <div class="formBlock z-relative z-mg-t20">
+                <label class="z-absolute z-text-right">手机号码</label>
+                <input class="z-input z-large z-blue" placeholder="输入手机号码">
+                <div class="z-color-gray z-px12 z-mg-t3">请填写您在银行预留的手机号码，以验证银行卡是否属于您本人</div>
+            </div>
+            <div class="formBlock z-relative z-mg-tb20">
+                <button class="z-button z-large zi-pd-lr20 z-blue">确认添加</button>
+            </div>
+        </form>
+    </section>
+    <section id="addAlipay" class="addCardSection z-hide">
+        <form class="">
+            <div class="formBlock z-relative z-mg-t10">
+                <label class="z-absolute z-text-right">真实姓名</label>
+                <input class="z-input z-large z-blue" placeholder="输入真实姓名">
+            </div>
+            <div class="formBlock z-relative z-mg-t20">
+                <label class="z-absolute z-text-right">支付宝账号</label>
+                <input class="z-input z-large z-blue" placeholder="输入支付宝账号">
+                <div class="z-color-gray z-px12 z-mg-t3">请填写您的支付宝账号</div>
+            </div>
+            <div class="formBlock z-relative z-mg-tb20">
+                <button class="z-button z-large zi-pd-lr20 z-blue">确认添加</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+${zhiqim_manager_content_end()}

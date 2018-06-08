@@ -1,4 +1,4 @@
-${zhiqim_manager_breadcrumb ("个人信息")}
+${zhiqim_manager_breadcrumb ("提现")}
 ${zhiqim_manager_content()}
 ${Styles.src("/zres/css/index.css")}
 <div class="detail-content z-bg-white">
@@ -25,15 +25,15 @@ ${Styles.src("/zres/css/index.css")}
         <div class="section-header z-mg-b20"><h4 class="z-px16 z-show-ib z-mg0">我的银行卡</h4></div>
         <div class="item z-relative z-float-left z-mg-r10">
             <div class="z-pd-lr15 z-h35 z-lh35 z-bd-b">银行卡: <span class="z-float-right">****6084</span></div>
-            <div class="z-pd-lr15 z-pd-t10 text-blue z-px24 z-h50 z-lh40">￥0.00<span class="z-mg-l10 z-px14 z-color-gray">余额</span></div>
+            <div class="z-pd-lr15 z-pd-t10 text-blue z-px24 z-h50 z-lh40">￥0.00<span class="z-mg-l15 z-px14 z-color-gray">余额</span></div>
             <div class="z-pd-lr15 z-pd-b10 z-h30 z-lh20 z-text-right"><span class="z-text-red del z-pointer">删除</span></div>
         </div>
         <div class="item z-relative z-float-left z-mg-r10">
             <div class="z-pd-lr15 z-h35 z-lh35 z-bd-b">支付宝: <span class="z-float-right">185****6084</span></div>
-            <div class="z-pd-lr15 z-pd-t10 text-blue z-px24 z-h50 z-lh40">￥0.00<span class="z-mg-l10 z-px14 z-color-gray">余额</span></div>
+            <div class="z-pd-lr15 z-pd-t10 text-blue z-px24 z-h50 z-lh40">￥0.00<span class="z-mg-l15 z-px14 z-color-gray">余额</span></div>
             <div class="z-pd-lr15 z-pd-b10 z-h30 z-lh20 z-text-right"><span class="z-text-red del z-pointer">删除</span></div>
         </div>
-        <a class="item add z-relative z-float-left z-text-center z-mg-r10 z-pointer" href="addCard.htm">
+        <a class="item add z-relative z-float-left z-text-center z-mg-r10 z-pointer" href="">
             <span class="addBlock z-show-ib z-w30 z-h30 z-relative"></span><br>
             <span class="z-blue z-show-ib z-mg-t5">添加银行卡</span>
         </a>

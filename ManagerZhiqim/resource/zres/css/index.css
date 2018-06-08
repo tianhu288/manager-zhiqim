@@ -3,14 +3,16 @@
     border: 1px solid #DCE4EA
 }
 
-.detail-content a {
+.detail-content a,.detail-content .text-blue {
     color: #108cee;
 }
 
 .detail-content h2 {
+    height: 60px;
     line-height: 60px;
     border-bottom: 1px solid #E5E5E5;
 }
+
 
 .detail-content section {
     position: relative;
@@ -42,40 +44,65 @@
     vertical-align:top;
 }
 
-.detail-content .bg {
-    float: left;
-    width: 48px;
-    height: 48px;
-    margin: 10px 20px 0 5px;
-    background: url(../imgs/index-icons.png) 48px 48px no-repeat
-}
-
-.detail-content .bg.day {
-    background-position: 0 0
-}
-
-.detail-content .bg.month {
-    background-position: -58px 0
-}
-
-.detail-content .bg.credit {
-    background-position: -116px 0
-}
-
-.detail-content .bg.order {
-    background-position: 0 -58px
-}
-
-.detail-content .bg.renew {
-    background-position: -58px -58px
-}
-
-.detail-content .bg.invoice {
-    background-position: -116px -58px
-}
-
 .detail-content .account-panel .item {
     min-width: 200px;
-    min-height: 100px;
+    min-height: 115px;
     background: #f6f7fb
+}
+
+
+/** 添加银行卡 **/
+
+.detail-content h2 .tabItem {
+    box-sizing:content-box;
+    cursor:pointer;
+    padding:0 30px;
+}
+
+.detail-content h2 .tabItem.active {
+    background:#fff;
+    border:1px solid #f1f1f1;
+    border-bottom-color:#fff;
+}
+
+.detail-content .account-panel .item.add {
+    padding-top:35px;
+}
+.detail-content .account-panel .item.add:hover {
+    box-shadow:0 0 10px 0 rgba(0,0,0,.3);
+}
+
+.detail-content .account-panel .item .del:hover {
+    text-decoration:underline;
+}
+.detail-content .account-panel .addBlock::before,
+.detail-content .account-panel .addBlock::after {
+    content:"";
+    position:absolute;
+    background:#ccc;
+}
+
+.detail-content .account-panel .addBlock::before {
+    width:30px;
+    height:8px;
+    left:0;
+    top:11px;
+}
+
+.detail-content .account-panel .addBlock::after {
+    width:8px;
+    height:30px;
+    left:11px;
+    top:0;
+}
+.addCardSection > form {
+    padding-right:100px;
+}
+.addCardSection > form .formBlock {
+    padding-left:50%;
+}
+.addCardSection > form .formBlock > label {
+    width:100px;
+    line-height:34px;
+    margin-left:-110px;
 }

@@ -14,5 +14,7 @@
     <!-- ======================================================================= -->
     
     <!-- 项目类目管理 -->
-    <action name="测试页" path="/manager/index.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/manager/index.zml"/>
+    <action name="个人信息" path="/manager/index.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/manager/index.zml"/>
+    <action name="添加银行卡" path="/manager/addCard.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/manager/addCard.zml"/>
+    <action name="提现" path="/manager/case.htm" view="/ztmpl/zhiqimManager/template.htm" include="/zview/manager/case.zml"/>
 </zhiqim-context>

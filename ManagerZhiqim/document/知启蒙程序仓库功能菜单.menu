@@ -40,6 +40,8 @@
     <menu parent="MENU_010" code="MENU_010_200" name="账户中心设置" abbr="" level="2" status="0" type="1" icon="z-apps" url="/zhiqimAccount/payment.htm" desc=""/>
     <menu parent="MENU_010" code="MENU_010_210" name="项目类目管理" abbr="" level="2" status="0" type="1" icon="z-list" url="/zhiqimGitcan/type.htm" desc=""/>
     <menu parent="MENU" code="MENU_030" name="统计数据" abbr="统计" level="1" status="0" type="1" icon="z-list" url="" desc=""/>
-    <menu parent="MENU_030" code="MENU_030_010" name="概览" abbr="" level="2" status="0" type="1" icon="z-computer" url="/manager/index.htm" desc=""/>
+    <menu parent="MENU_030" code="MENU_030_010" name="个人信息" abbr="" level="2" status="0" type="1" icon="z-customer" url="/manager/index.htm" desc=""/>
+    <menu parent="MENU_030" code="MENU_030_818" name="添加信用卡" abbr="" level="2" status="0" type="1" icon="z-add" url="/manager/addCard.htm" desc=""/>
+    <menu parent="MENU_030" code="MENU_030_365" name="提现" abbr="" level="2" status="0" type="1" icon="z-cash" url="/manager/case.htm" desc=""/>
 
 </zhiqim-menu>
