@@ -1,42 +1,79 @@
 ${zhiqim_manager_breadcrumb ("提现")}
 ${zhiqim_manager_content()}
 ${Styles.src("/zres/css/index.css")}
+<script>
+function switchAddCard(elem)
+{//切换添加银行卡方式
+    Z(elem).addClass("active").siblings(".tabItem").removeClass("active");
+    var targ = "#" + Z(elem).attr("data-target");
+    Z(targ).show().siblings("section").hide();
+}
+</script>
 <div class="detail-content z-bg-white">
-    <h2 class="z-weight-normal z-pd-l20 z-px16 z-mg0">财务总览</h2>
-    <section class="account-balance zi-pd-b5">
-        <div class="section-header z-mg-b20"><h4 class="z-px16 z-show-ib z-mg0">账户信息</h4></div>
-        <div class="">
-            <div class="form-row z-mg-b15">
-                <label class="z-w80 z-px12 z-float-left z-show-ib z-h30 z-lh30 z-color-666">可提现余额：</label>
-                <div class="z-h30 z-lh30 z-mg-l0">
-                    <span class="z-mg-r15">￥0.00</span>
-                    <a href="#" class="z-mg-r15">提现</a>
-                </div>
+    <h2 class="z-weight-normal z-pd-l20 z-px16 z-mg0 z-bg-gray">
+        <span onclick="switchAddCard(this);" class="tabItem z-show-ib active" data-target="doCase">提现</span>
+        <span onclick="switchAddCard(this);" class="tabItem z-show-ib" data-target="caseHistory">历史记录</span>
+    </h2>
+    <section id="doCase" class="account-balance zi-pd-b5">
+        <form class="">
+            <div class="formBlock z-relative z-mg-t10">
+                <label class="z-absolute z-text-right">银行卡</label>
+                <select class="z-select z-large z-w200" data-role="z-select">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
             </div>
-            <div class="form-row z-mg-b15">
-                <label class="z-w80 z-px12 z-float-left z-show-ib z-h30 z-lh30 z-color-666">冻结金额：</label>
-                <div class="z-h30 z-lh30 z-mg-l0 z-px15">
-                    <a href="#" class="z-px14 z-mg-r5">0</a>张
-                </div>
+            <div class="formBlock z-relative z-mg-t20">
+                <label class="z-absolute z-text-right">金额</label>
+                <input class="z-input z-large zi-w200 z-blue" placeholder="输入提现金额" >
             </div>
-        </div>
+            <div class="formBlock z-relative z-mg-t20">
+                <label class="z-absolute z-text-right">支付密码</label>
+                <input class="z-input z-large zi-w200 z-blue" placeholder="输入支付密码">
+                <div class="z-text-gray z-mg-t3">填写你的支付密码</div>
+            </div>
+            <div class="formBlock z-relative z-mg-tb20">
+                <button class="z-button z-large zi-pd-lr20 z-blue">确认</button>
+            </div>
+        </form>
     </section>
-    <section class="account-panel">
-        <div class="section-header z-mg-b20"><h4 class="z-px16 z-show-ib z-mg0">我的银行卡</h4></div>
-        <div class="item z-relative z-float-left z-mg-r10">
-            <div class="z-pd-lr15 z-h35 z-lh35 z-bd-b">银行卡: <span class="z-float-right">****6084</span></div>
-            <div class="z-pd-lr15 z-pd-t10 text-blue z-px24 z-h50 z-lh40">￥0.00<span class="z-mg-l15 z-px14 z-color-gray">余额</span></div>
-            <div class="z-pd-lr15 z-pd-b10 z-h30 z-lh20 z-text-right"><span class="z-text-red del z-pointer">删除</span></div>
+    <section id="caseHistory" class="z-hide">
+        <div class="ch-list z-h50 z-lh50 z-bg-gray">
+            <span class="ch-time">创建时间</span>
+            <span class="ch-card">银行卡</span>
+            <span class="ch-case">金额（元）</span>
+            <span class="ch-state">状态</span>
+            <span class="ch-todo">操作</span>
         </div>
-        <div class="item z-relative z-float-left z-mg-r10">
-            <div class="z-pd-lr15 z-h35 z-lh35 z-bd-b">支付宝: <span class="z-float-right">185****6084</span></div>
-            <div class="z-pd-lr15 z-pd-t10 text-blue z-px24 z-h50 z-lh40">￥0.00<span class="z-mg-l15 z-px14 z-color-gray">余额</span></div>
-            <div class="z-pd-lr15 z-pd-b10 z-h30 z-lh20 z-text-right"><span class="z-text-red del z-pointer">删除</span></div>
+        <div class="ch-list z-h50 z-bd-b">
+            <span class="ch-time"><span>2018-06-07</span><br><span class="z-text-gray">13:01</span></span>
+            <span class="ch-card">****5241</span>
+            <span class="ch-case">150000.00</span>
+            <span class="ch-state"><span class="z-color-red">正在处理</span></span>
+            <span class="ch-todo"><span class="z-color-blue">删除记录</span></span>
         </div>
-        <a class="item add z-relative z-float-left z-text-center z-mg-r10 z-pointer" href="">
-            <span class="addBlock z-show-ib z-w30 z-h30 z-relative"></span><br>
-            <span class="z-blue z-show-ib z-mg-t5">添加银行卡</span>
-        </a>
+        <div class="ch-list z-h50 z-bd-b">
+            <span class="ch-time"><span>2018-06-07</span><br><span class="z-text-gray">13:01</span></span>
+            <span class="ch-card">****5241</span>
+            <span class="ch-case">150000.00</span>
+            <span class="ch-state"><span class="z-color-red">正在处理</span></span>
+            <span class="ch-todo"><span class="z-color-blue">删除记录</span></span>
+        </div>
+        <div class="ch-list z-h50 z-bd-b">
+            <span class="ch-time"><span>2018-06-07</span><br><span class="z-text-gray">13:01</span></span>
+            <span class="ch-card">****5241</span>
+            <span class="ch-case">150000.00</span>
+            <span class="ch-state"><span class="z-color-red">正在处理</span></span>
+            <span class="ch-todo"><span class="z-color-blue">删除记录</span></span>
+        </div>
+        <div class="ch-list z-h50 z-bd-b">
+            <span class="ch-time"><span>2018-06-07</span><br><span class="z-text-gray">13:01</span></span>
+            <span class="ch-card">****5241</span>
+            <span class="ch-case">150000.00</span>
+            <span class="ch-state"><span class="z-color-red">正在处理</span></span>
+            <span class="ch-todo"><span class="z-color-blue">删除记录</span></span>
+        </div>
     </section>
 </div>
 

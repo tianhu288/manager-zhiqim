@@ -31,7 +31,7 @@ function switchAddCard(elem)
             <div class="formBlock z-relative z-mg-t20">
                 <label class="z-absolute z-text-right">手机号码</label>
                 <input class="z-input z-large z-blue" placeholder="输入手机号码">
-                <div class="z-color-gray z-px12 z-mg-t3">请填写您在银行预留的手机号码，以验证银行卡是否属于您本人</div>
+                <div class="z-text-gray z-mg-t3">请填写您在银行预留的手机号码，以验证银行卡是否属于您本人</div>
             </div>
             <div class="formBlock z-relative z-mg-tb20">
                 <button class="z-button z-large zi-pd-lr20 z-blue">确认添加</button>

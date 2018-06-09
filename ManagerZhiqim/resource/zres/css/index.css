@@ -95,14 +95,40 @@
     left:11px;
     top:0;
 }
-.addCardSection > form {
-    padding-right:100px;
+.formBlock {
+    padding-left:15%;
 }
-.addCardSection > form .formBlock {
-    padding-left:50%;
-}
-.addCardSection > form .formBlock > label {
+.formBlock > label {
     width:100px;
     line-height:34px;
     margin-left:-110px;
+}
+
+/** 提现历史记录 **/
+.ch-list {
+    display:-webkit-flex;
+    display:flex;
+    -webkit-align-items:center;
+    align-items:center;
+    height:50px;
+}
+.ch-list [class ^= ch-] {
+    padding:0 15px;
+}
+.ch-list .ch-time{
+    flex:0 0 15%;
+}
+.ch-list .ch-card{
+    flex:1 1 40%;
+}
+.ch-list .ch-case{
+    flex:1 0 15%;
+}
+.ch-list .ch-state{
+    text-align:right;
+    flex:1 0 15%;
+}
+.ch-list .ch-todo{
+    text-align:right;
+    flex:1 0 15%;
 }

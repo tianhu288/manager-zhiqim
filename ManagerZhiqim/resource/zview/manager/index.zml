@@ -10,7 +10,7 @@ ${Styles.src("/zres/css/index.css")}
                 <label class="z-w80 z-px12 z-float-left z-show-ib z-h30 z-lh30 z-color-666">可提现余额：</label>
                 <div class="z-h30 z-lh30 z-mg-l0">
                     <span class="z-mg-r15">￥0.00</span>
-                    <a href="#" class="z-mg-r15">提现</a>
+                    <a href="case.htm" class="z-mg-r15">提现</a>
                 </div>
             </div>
             <div class="form-row z-mg-b15">
