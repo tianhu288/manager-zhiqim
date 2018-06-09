@@ -33,9 +33,6 @@ function switchAddCard(elem)
                 <input class="z-input z-large z-blue" placeholder="输入手机号码">
                 <div class="z-text-gray z-mg-t3">请填写您在银行预留的手机号码，以验证银行卡是否属于您本人</div>
             </div>
-            <div class="formBlock z-relative z-mg-tb20">
-                <button class="z-button z-large zi-pd-lr20 z-blue">确认添加</button>
-            </div>
         </form>
     </section>
     <section id="addAlipay" class="addCardSection z-hide">

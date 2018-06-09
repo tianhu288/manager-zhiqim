@@ -10,10 +10,7 @@ function switchAddCard(elem)
 }
 </script>
 <div class="detail-content z-bg-white">
-    <h2 class="z-weight-normal z-pd-l20 z-px16 z-mg0 z-bg-gray">
-        <span onclick="switchAddCard(this);" class="tabItem z-show-ib active" data-target="doCase">提现</span>
-        <span onclick="switchAddCard(this);" class="tabItem z-show-ib" data-target="caseHistory">历史记录</span>
-    </h2>
+    <h2 class="z-weight-normal z-pd-l20 z-px16 z-mg0">提现</h2>
     <section id="doCase" class="account-balance zi-pd-b5">
         <form class="">
             <div class="formBlock z-relative z-mg-t10">
@@ -38,7 +35,10 @@ function switchAddCard(elem)
             </div>
         </form>
     </section>
-    <section id="caseHistory" class="z-hide">
+</div>
+<div class="detail-content z-mg-t10 z-bg-white">
+    <h2 class="z-weight-normal z-pd-l20 z-px16 z-mg0">历史记录</h2>
+    <section id="caseHistory">
         <div class="ch-list z-h50 z-lh50 z-bg-gray">
             <span class="ch-time">创建时间</span>
             <span class="ch-card">银行卡</span>
@@ -75,6 +75,7 @@ function switchAddCard(elem)
             <span class="ch-todo"><span class="z-color-blue">删除记录</span></span>
         </div>
     </section>
+    <section class="z-h50"></section>
 </div>
 
 ${zhiqim_manager_content_end()}
