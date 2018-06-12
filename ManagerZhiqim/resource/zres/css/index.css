@@ -96,11 +96,45 @@
 }
 .formBlock {
     padding-left:15%;
+    min-height:34px;
+    line-height:34px;
 }
 .formBlock > label {
     width:100px;
     line-height:34px;
     margin-left:-110px;
+}
+
+/** 提现选择列表 **/
+.card-list{
+    min-height:35px;
+    -webkit-transition:height .5s;
+    transition:height .5s;
+}
+.card-list > li{
+    position:absolute;
+    height:35px;
+    line-height:33px;
+    border:1px solid #999;
+    border-radius:1px;
+    width:300px;
+    padding: 0 6px;
+    background:#fff;
+    cursor:pointer;
+    -webkit-transition: top .5s;
+    transition: top .5s;
+}
+.card-list > li.active{
+    z-index:9;
+}
+.card-list > li:hover{
+    border-color:#28a3ef;
+}
+.card-list > li > span{
+    bottom:-1px;
+}
+.card-list > li > span+span{
+    margin-left:30px;
 }
 
 /** 提现历史记录 **/

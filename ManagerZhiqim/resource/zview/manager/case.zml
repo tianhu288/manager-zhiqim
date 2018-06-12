@@ -2,11 +2,61 @@ ${zhiqim_manager_breadcrumb ("提现")}
 ${zhiqim_manager_content()}
 ${Styles.src("/zres/css/index.css")}
 <script>
+//定义高度常量
+var varH = 45;
+//载入加载
+Z.onload(function()
+{
+    //初始化卡片列表高度
+    initCardList();
+});
+
 function switchAddCard(elem)
 {//切换添加银行卡方式
     Z(elem).addClass("active").siblings(".tabItem").removeClass("active");
     var targ = "#" + Z(elem).attr("data-target");
     Z(targ).show().siblings("section").hide();
+}
+
+function selectThisCard(elem)
+{//选择当前 card
+    var setTop;
+    var $$li = Z(".card-list>li");
+    var thisIndex = parseInt(Z(elem).attr("data-index"));
+    
+    //移动位置
+    for(var i = 0;i < $$li.length;i++)
+    {
+        var liIndex = parseInt($$li[i].getAttribute("data-index"));
+        if (liIndex > thisIndex) continue;
+        if (liIndex < thisIndex) {
+            liIndex++;
+            setTop = liIndex * varH;
+            $$li[i].setAttribute("data-index", liIndex);
+        } else if (liIndex == thisIndex) {
+            setTop = 0;
+            $$li[i].setAttribute("data-index", 0);
+        }
+        Z($$li[i]).css("top", setTop);
+    }
+    
+    //添加选中
+    var $fLi = Z(".card-list>li");
+    Z(elem).addClass("active").siblings("li").removeClass("active");
+    Z(elem).parent().find(".z-radio").removeClass("z-active");
+    Z(elem).find(".z-radio").addClass("z-active");
+}
+
+function initCardList()
+{//初始化卡片列表高度
+    var $ul = Z(".card-list");
+    var $$li = $ul.find("li");
+    var liNum = $$li.length;
+    
+    $ul.css("height", liNum * varH);
+    for (var i = 0;i < liNum;i++) {
+        Z($$li[i]).css("top", i * varH);
+    }
 }
 </script>
 <div class="detail-content z-bg-white">
@@ -15,13 +65,25 @@ function switchAddCard(elem)
         <form class="">
             <div class="formBlock z-relative z-mg-t10">
                 <label class="z-absolute z-text-right">银行卡</label>
-                <select class="z-select z-large z-w200" data-role="z-select">
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                </select>
+                <ul class="card-list">
+                    <li onclick="selectThisCard(this);" data-index="0">
+                        <i class="z-radio z-blue z-mg-r3"></i>
+                        <span class="z-relative">银行卡1</span>
+                        <span class="z-relative">****5641</span>
+                    </li>
+                    <li onclick="selectThisCard(this);" data-index="1">
+                        <i class="z-radio z-blue z-mg-r3"></i>
+                        <span class="z-relative">银行卡2</span>
+                        <span class="z-relative">****5641</span>
+                    </li>
+                    <li onclick="selectThisCard(this);" data-index="2">
+                        <i class="z-radio z-blue z-mg-r3"></i>
+                        <span class="z-relative">银行卡3</span>
+                        <span class="z-relative">****5641</span>
+                    </li>
+                </ul>
             </div>
-            <div class="formBlock z-relative z-mg-t20">
+            <div class="formBlock z-relative z-mg-t10">
                 <label class="z-absolute z-text-right">金额</label>
                 <input class="z-input z-large zi-w200 z-blue" placeholder="输入提现金额" >
             </div>
